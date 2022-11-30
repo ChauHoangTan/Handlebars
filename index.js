@@ -28,6 +28,8 @@ app.get('/task2', (req, res) => {
 
 app.use('/task1', require('./routes/task1Route'))
 
+app.use('/task2', require('./routes/task3Route'))
+
 app.use('/task3', require('./routes/task3Route'))
 
 app.use('/task4', require('./routes/task4Route'))

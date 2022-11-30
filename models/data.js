@@ -21,6 +21,39 @@ const emotions = [
     quotePath: 'images/task1/angry/angry1.jpg'
   }
 ];
+/* task 2 */
+const JarsSaving = [
+  {
+    title: 'nec',
+    imagePath: 'images/task2/nec.jpeg',
+    devide: 0.55
+  },
+  {
+    title: 'ffa',
+    imagePath: 'images/task2/ffa.jpeg',
+    devide: 0.1
+  },
+  {
+    title: 'edu',
+    imagePath: 'images/task2/edu.jpeg',
+    devide: 0.1
+  },
+  {
+    title: 'saving',
+    imagePath: 'images/task2/saving.jpeg',
+    devide: 0.1
+  },
+  {
+    title: 'play',
+    imagePath: 'images/task2/play.jpeg',
+    devide: 0.1
+  },
+  {
+    title: 'give',
+    imagePath: 'images/task2/give.jpeg',
+    devide: 0.05
+  }
+];
 /* task 3 */
 const categories = [
   {
@@ -204,6 +237,7 @@ const zodiacs = [
 
 module.exports = {
   emotions,
+  JarsSaving,
   categories,
   products,
   zodiacs
