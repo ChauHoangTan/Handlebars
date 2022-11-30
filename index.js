@@ -32,9 +32,7 @@ app.get('/task3', (req, res) => {
     res.render('task3');
 })
 
-app.get('/task4', (req, res) => {
-    res.render('task4');
-})
+app.use('/task4', require('./routes/task4Route'))
 
 app.set('port', process.env.PORT || 3000)
 
