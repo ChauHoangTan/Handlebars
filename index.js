@@ -20,13 +20,11 @@ app.get('/', (req, res) => {
     res.render('index');
 })
 
-app.get('/task1', (req, res) => {
-    res.render('task1');
-})
-
 app.get('/task2', (req, res) => {
     res.render('task2');
 })
+
+app.use('/task1', require('./routes/task1Route'))
 
 app.use('/task3', require('./routes/task3Route'))
 
