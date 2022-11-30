@@ -17,18 +17,22 @@ app.set('view engine', 'hbs')
 app.use(express.static(__dirname + '/Handlebars-StaticFiles'));
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {footer : 'Group11'});
 })
 
 app.get('/task2', (req, res) => {
+    res.locals.footer = "Nguyễn Huy Hoàn"
     res.render('task2');
 })
+
 
 app.use('/task1', require('./routes/task1Route'))
 
 app.use('/task3', require('./routes/task3Route'))
 
 app.use('/task4', require('./routes/task4Route'))
+
+
 
 app.set('port', process.env.PORT || 3000)
 
